@@ -113,4 +113,8 @@ ChatGPT was used to suggest token names, write generic placeholder text, and tro
 
 Repository URL
 
+https://github.com/Lriverland92/Portfolio
+
 Website URL
+
+https://lriverland92.github.io/Portfolio/
