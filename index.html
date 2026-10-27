@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Design System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <p>A design system for my portfolio.</p>
+  </header>
+
+  <main>
+    <section id="foundation">
+      <h2>Foundation and Reset</h2>
+      <p>I used border-box so padding and borders are included in an element's width.</p>
+      <p>I removed the default body margin so I can control the spacing around my page.</p>
+    </section>
+
+    <section id="tokens">
+      <h2>Design Tokens</h2>
+      <p>These variables help me keep the style of my portfolio consistent.</p>
+
+      <h3>Colors</h3>
+      <p><code>--color-navy</code>: #052240 — Background</p>
+      <p><code>--color-blue</code>: #004b6b — Surfaces</p>
+      <p><code>--color-burgundy</code>: #750037 — Accent</p>
+      <p><code>--color-pink</code>: #fa1593 — Buttons and links</p>
+      <p><code>--color-sky</code>: #95deff — Text</p>
+
+      <div class="color-swatches">
+        <div class="swatch">
+          <div class="swatch-color swatch-navy"></div>
+          <p>Navy</p>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-color swatch-blue"></div>
+          <p>Blue</p>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-color swatch-burgundy"></div>
+          <p>Burgundy</p>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-color swatch-pink"></div>
+          <p>Pink</p>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-color swatch-sky"></div>
+          <p>Sky Blue</p>
+        </div>
+      </div>
+
+      <h3>Spacing</h3>
+      <p><code>--space-small</code>: 0.5rem — Small gaps</p>
+      <p><code>--space-medium</code>: 1rem — Standard spacing</p>
+      <p><code>--space-large</code>: 2rem — Section spacing</p>
+
+      <div class="spacing-examples">
+        <div>
+          <p>Small: 0.5rem</p>
+          <div class="spacing-bar spacing-small"></div>
+        </div>
+
+        <div>
+          <p>Medium: 1rem</p>
+          <div class="spacing-bar spacing-medium"></div>
+        </div>
+
+        <div>
+          <p>Large: 2rem</p>
+          <div class="spacing-bar spacing-large"></div>
+        </div>
+      </div>
+
+      <h3>Sizing</h3>
+      <p><code>--content-width</code>: 70rem — Maximum content width</p>
+
+      <div class="sizing-example">
+        <p>This example uses the content width token. It can shrink on smaller screens but will not grow beyond 70rem.</p>
+      </div>
+
+      <h3>Rounded Corners</h3>
+      <p><code>--radius-small</code>: 0.5rem — Small rounded corners</p>
+      <p><code>--radius-large</code>: 1rem — Large rounded corners</p>
+
+      <div class="radius-examples">
+        <div class="radius-box radius-box-small">
+          Small Radius
+        </div>
+
+        <div class="radius-box radius-box-large">
+          Large Radius
+        </div>
+      </div>
+
+      <h3>Elevation</h3>
+      <p><code>--shadow-card</code>: 0 4px 12px rgba(0, 0, 0, 0.2) — Card shadow</p>
+
+      <div class="elevation-examples">
+        <div class="elevation-box elevation-flat">
+          <p>Without Shadow</p>
+        </div>
+
+        <div class="elevation-box elevation-raised">
+          <p>With Shadow</p>
+        </div>
+      </div>
+
+      <h3>Typography</h3>
+      <p><code>--font-body</code>: Arial, Helvetica, sans-serif — Body text</p>
+      <p><code>--font-heading</code>: Georgia, Times New Roman, serif — Headings</p>
+      <p><code>--font-size-body</code>: 1rem — Body text size</p>
+      <p><code>--font-size-heading</code>: 2rem — Heading size</p>
+      <p><code>--line-height-body</code>: 1.6 — Line spacing</p>
+
+      <div class="type-examples">
+        <p class="type-heading">Heading Font Example</p>
+        <p class="type-body">This is an example of the body font. I use Arial because it is simple and easy to read.</p>
+      </div>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+
+      <h3>My Work</h3>
+      <h4>3D Game Art and Web Development</h4>
+
+      <p>This is an example of body text used in my portfolio.</p>
+      <p><small>Last updated: October 2026</small></p>
+
+      <ul>
+        <li>3D Modeling</li>
+        <li>Technical Art</li>
+        <li>Web Development</li>
+      </ul>
+
+      <p>CSS example: <code>font-family</code></p>
+      <p><a href="#foundation">Back to Foundation</a></p>
+
+      <h3>Font Choices</h3>
+      <p>I chose Arial for body text because it is simple and easy to read.</p>
+      <p>I chose Georgia for headings to make them stand out from the body text.</p>
+      <p>Both fonts are commonly available system fonts, so I do not need to download them from another website.</p>
+      <p>If Arial is unavailable, the browser will try Helvetica and then a generic sans-serif font.</p>
+      <p>If Georgia is unavailable, the browser will try Times New Roman and then a generic serif font.</p>
+    </section>
+
+    <section id="actions">
+      <h2>Actions and States</h2>
+      <p>These are examples of interactive elements used in my portfolio.</p>
+
+      <h3>Text Link</h3>
+      <p><a href="#typography">View Typography Section</a></p>
+
+      <h3>Buttons</h3>
+      <button type="button" class="button-primary">Primary Button</button>
+      <button type="button" class="button-secondary">Secondary Button</button>
+      <button type="button" class="button-primary" disabled>Disabled Button</button>
+
+      <h3>Interaction States</h3>
+      <p>Hover: Move your mouse over a button.</p>
+      <p>Focus: Press Tab to navigate to a button.</p>
+      <p>Active: Press and hold a button to see its active state.</p>
+      <p>Disabled: The disabled button cannot be clicked or selected using Tab.</p>
+    </section>
+
+    <section id="surfaces">
+      <h2>Surfaces</h2>
+      <p>These examples show how I can display projects and information in my portfolio.</p>
+
+      <h3>Project Cards</h3>
+
+      <div class="card-grid">
+        <article class="card">
+          <h4>3D Environment Art</h4>
+          <p>A card for my 3D modeling projects.</p>
+          <a href="#typography">View Project Details</a>
+        </article>
+
+        <article class="card card-accent">
+          <h4>Web Development</h4>
+          <p>A second card style for my web development projects.</p>
+          <a href="#typography">View Project Details</a>
+        </article>
+      </div>
+
+      <h3>Notice</h3>
+      <div class="notice" role="status">
+        <p>This is an example of an informational notice.</p>
+      </div>
+
+      <h3>Media Placeholder</h3>
+      <div class="media-placeholder" role="img" aria-label="Placeholder for a future portfolio project image">
+        <span>Project Image Placeholder</span>
+      </div>
+    </section>
+
+    <section id="forms">
+      <h2>Form Controls</h2>
+      <p>These are examples of form elements I could use on my portfolio.</p>
+
+      <form>
+        <p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+        </p>
+
+        <p>
+          <label for="project">Project Type</label>
+          <select id="project" name="project">
+            <option value="">Choose a project type</option>
+            <option value="3d">3D Art</option>
+            <option value="web">Web Development</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <label>
+            <input type="checkbox" name="interest" value="3d">
+            3D Art
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <label>
+            <input type="radio" name="contact" value="email">
+            Email
+          </label>
+          <label>
+            <input type="radio" name="contact" value="phone">
+            Phone
+          </label>
+        </fieldset>
+
+        <button type="button" class="button-primary">Example Form Button</button>
+      </form>
+    </section>
+
+    <section id="themes">
+      <h2>Color Themes</h2>
+      <p>These examples show how the same design components look with different color themes.</p>
+
+      <div class="theme-grid">
+        <div class="theme-example">
+          <h3>Default Dark Theme</h3>
+          <p>This is the main theme for my portfolio.</p>
+          <a href="#tokens">View Design Tokens</a>
+
+          <div class="theme-card">
+            <h4>3D Environment Art</h4>
+            <p>Example project card using the dark theme.</p>
+            <button type="button" class="button-primary">Primary Button</button>
+            <button type="button" class="button-secondary">Secondary Button</button>
+          </div>
+        </div>
+
+        <div class="theme-example theme-light">
+          <h3>Alternate Light Theme</h3>
+          <p>This theme uses a light background with dark text.</p>
+          <a href="#tokens">View Design Tokens</a>
+
+          <div class="theme-card">
+            <h4>3D Environment Art</h4>
+            <p>Example project card using the light theme.</p>
+            <button type="button" class="button-primary">Primary Button</button>
+            <button type="button" class="button-secondary">Secondary Button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
